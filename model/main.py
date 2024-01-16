@@ -1,16 +1,16 @@
+import pandas as pd
 
+
+def get_clean_data():
+    data = pd.read_csv("data/data.csv")
+    print(data.head())
+    return data
 
 
 def main():
-    # Create the model
-    model = create_model()
+    
+    data = get_clean_data()
 
-    # Train the model
-    train(model)
-
-    # Evaluate the model
-    evalute(model)
 
 if __name__ == "__main__":
     main()
-    
